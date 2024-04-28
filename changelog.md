@@ -1,5 +1,19 @@
 # arRPC Changelog
 
+## v3.4.0 [28-04-2024]
+- Linux process detection is now improved, thanks to [Sqaaakoi](https://github.com/Sqaaakoi). ([#75](https://github.com/OpenAsar/arrpc/pull/75))
+- Rewrote ready packet sent to applications so potential regressions from v3.3.1 should be fixed.
+- Rewrote detectable DB loading to work with Node v22.
+- Removed top-level await so older runtimes should no longer crash.
+
+## v3.3.1 [13-02-2024]
+- Fixed a bug crashing some RPC libraries.
+
+## v3.3.0 [19-01-2024]
+- **Rewrote Linux game detection.** It should be more reliable and optimized now. Thanks to @rniii and @0xk1f0 for PRs.
+- **Fixed bug which broke a community Rust SDK.**
+- **Updated game database.**
+
 ## v3.2.0 [13-08-2023]
 - **Added callback to invite events API.**
 - **Updated detectable database with latest from Discord.**
